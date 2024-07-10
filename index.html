@@ -1,0 +1,708 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- favicon -->
+    <link rel="icon" href="/Images/logo.png" type="image/x-icon" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- sctom style sheets -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Chezious|A Proud Pakistani Brand</title>
+  </head>
+  <body>
+    <!-- header -->
+    <!-- header left -->
+    <header class="header">
+      <div class="delivery-location">
+        <a href="" class="customized-links">
+          <i class="bi bi-geo-alt-fill" onclick="getLocation()"></i>
+          deliver to:
+          <p id="location-info"></p>
+        </a>
+      </div>
+      <!-- header center -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="/Images/logo.png" alt="" />
+        </a>
+      </div>
+      <!-- header right -->
+      <div class="header-right">
+        <span
+          ><a href="" class="customized-links"><i class="bi bi-search"></i></a
+        ></span>
+        <span
+          ><a href="" class="customized-links"
+            ><i class="bi bi-person-circle"></i></a
+        ></span>
+        <a class="customized-links">
+          <button class="btn-with-caret" onclick="showCart();">
+            <i class="bi bi-cart3" style="font-size: 25px"></i>
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <!-- main advertisment carousel -->
+    <div class="gallery-wrapper">
+      <div class="previous-btn">
+        <img src="/Images/carousel/left-arrow.png" alt="" />
+      </div>
+      <div class="gallery">
+        <span>
+          <img src="/Images/carousel/advt1.jpg" alt="" />
+        </span>
+        <span>
+          <img src="/Images/carousel/advt2.jpg" alt="" />
+        </span>
+        <span>
+          <img src="/Images/carousel/advt3.jpg" alt="" />
+        </span>
+      </div>
+      <div class="next-btn">
+        <img src="/Images/carousel/right-arrow.png" alt="" />
+      </div>
+    </div>
+    <hr />
+    <!-- categorries slider -->
+    <div class="category">
+      <div class="prev-category" id="prevCategory">
+        <i class="bi bi-chevron-left"></i>
+      </div>
+      <div class="category-slider" id="categorySlider">
+        <a href="#" class="category-name active">I'm Back!</a>
+        <a href="#" class="category-name">Starters</a>
+        <a href="#" class="category-name">Somewhat Local</a>
+        <a href="#" class="category-name">Somewhat Sooper</a>
+        <a href="#" class="category-name">Cheezy Treats</a>
+        <a href="#" class="category-name">Pizza Deals</a>
+        <a href="#" class="category-name">Sandwiches & Platters</a>
+        <a href="#" class="category-name">Somewhat Amazing</a>
+        <a href="#" class="category-name">Pastas</a>
+        <a href="#" class="category-name">Burgerz</a>
+        <a href="#" class="category-name">Side Orders</a>
+        <a href="#" class="category-name">Addons</a>
+      </div>
+      <div class="next-category" id="nextCategory">
+        <i class="bi bi-chevron-right"></i>
+      </div>
+    </div>
+
+    <!-- App exclusive section -->
+    <section class="im-back section">
+      <h1 class="section-title">
+        <i class="bi bi-chevron-right"></i>
+        App Exclusive
+      </h1>
+      <div class="section-container">
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/pizza.jpg" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/pizza2.jpg" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">For You (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1250/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/pizza deal2.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hot Deal (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 999/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+      </div>
+    </section>
+    <hr />
+    <!-- section ends here -->
+    <!-- App exclusive section -->
+    <section class="im-back section">
+      <h1 class="section-title">
+        <i class="bi bi-chevron-right"></i>
+        Starters
+      </h1>
+      <div class="section-container">
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/pizza deal.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/pizz4.png" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/pizza deal1.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/app-2.png" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">For You (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1250/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/app-1.png" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hot Deal (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 999/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+      </div>
+    </section>
+    <hr />
+    <!-- section ends here -->
+    <!-- App exclusive section -->
+    <section class="im-back section">
+      <h1 class="section-title">
+        <i class="bi bi-chevron-right"></i>
+        Somewhat Lcal
+      </h1>
+      <div class="section-container">
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/1629619743.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/1628885239.png"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/1612872495497065653.png"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">For You (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1250/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/1612872495497065653 (1).png"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hot Deal (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 999/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+      </div>
+    </section>
+    <hr />
+    <!-- section ends here -->
+    <!-- App exclusive section -->
+    <section class="im-back section">
+      <h1 class="section-title">
+        <i class="bi bi-chevron-right"></i>
+        Somewhat Sooper
+      </h1>
+      <div class="section-container">
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/platter4.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/platter2.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">For You (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1250/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/app-3.png" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hot Deal (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 999/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+      </div>
+    </section>
+    <hr />
+    <!-- section ends here -->
+    <!-- App exclusive section -->
+    <section class="im-back section">
+      <h1 class="section-title">
+        <i class="bi bi-chevron-right"></i>
+        Cheezy Treats
+      </h1>
+      <div class="section-container">
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/platter1.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">App Deal (only valid for local)</h3>
+            <p class="card-desc">2 Fuzzy Burgers + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1089/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img src="/Images/deals/app-2.png" alt="deal-1" class="card-img" />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">For You (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 1250/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+        <!-- card component -->
+        <div class="card">
+          <div class="card-header">
+            <img
+              src="/Images/deals/plater4.jpg"
+              alt="deal-1"
+              class="card-img"
+            />
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Hot Deal (only valid for local)</h3>
+            <p class="card-desc">1 mediuam pizza + 200ml drink</p>
+          </div>
+          <hr />
+          <div class="card-footer">
+            <h5 class="card-pricing">Rs 999/-</h5>
+            <button class="card-btn btn">Add to cart</button>
+          </div>
+        </div>
+        <!-- card ends here -->
+      </div>
+    </section>
+    <hr />
+    <!-- section ends here -->
+
+    <!-- accordion section -->
+    <section class="accoridan-section section">
+      <h1 class="section-title">
+        <i class="bi bi-chevron-right"></i>
+        FAQs
+      </h1>
+      <div class="accordian">
+        <h1>Finest Taste Ever</h1>
+        <!-- accordian item -->
+        <div class="accordian-item">
+          <div class="accordian-title">
+            <h3>Craving for Something Cheesy and Magical?</h3>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordian-content">
+            <p>
+              A deal that is light on the pocket yet packed with flavors that
+              are all set to tantalize your taste buds? If yes, then order your
+              favorite deals from Cheezious right away! We offer a variety of
+              fast food items in our menu, including your favorite pizza and
+              zinger burger bursting with flavors. <br />
+              Even if at midnight you crave for something super delicious,
+              dine-in isn't possible while you search for pizza delivery near
+              me, just look up for Cheezious and we'll help fill your tummy with
+              food that is finger-licking good. <br />
+              We provide pizza delivery in Islamabad and Rawalpindi, so if
+              you're residing in the twin cities, it is time you get hold of the
+              best tasting fast food in town that too at minimum prices. We
+              promise, our rates are better than all those bigger names with
+              taste uncompromised. <br />
+              And if you have a family gathering to entertain, why not avail
+              your favorite items in a bundle deal while saving a few good
+              bucks? Let Cheezious give you a taste of the original food that is
+              served piping hot and fresh. What are you waiting for? Pick up
+              your phone and place your order right away!
+            </p>
+          </div>
+        </div>
+        <!-- accordian item ends here -->
+        <!-- accordian item -->
+        <div class="accordian-item">
+          <div class="accordian-title">
+            <h3>Why Chezious Deals?</h3>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordian-content">
+            <p>
+              Feeling hungry? Dreaming of munching on your favorite zinger
+              burger with an extra slice of cheese? When hunger hits hard, it is
+              time to visit us and check out Cheezious menu for your favorite
+              item. What do we offer? <br />
+              We the juiciest and fulfilling zinger burgers and pizza that is a
+              little spicy! Because what is life without spice, right? Or maybe
+              try out something desi as Behari rolls from our menu? Whatever you
+              like, we serve it hot to you. Cheezious Islamabad and Rawalpindi
+              maybe a new name to you, but we promise to make you fall in love
+              without superbly delicious food. <br />
+              All items are priced affordably yet if you still wish to save a
+              few bucks, check out Cheezious deals that are good enough to serve
+              a complete group of friends. <br />
+              But what if you feel hungry at an hour when no other restaurant is
+              open to serve? No matter what time it is, we Cheezious delivery
+              will bring you food that'll settle down you're hungry with
+              delectable food. Yes, our food is "fast" in delivery and full of
+              taste that is hard to match! When hunger hits hard, all you need
+              to do is call Cheezious!
+            </p>
+          </div>
+        </div>
+        <!-- accordian item ends here -->
+        <!-- accordian item -->
+        <div class="accordian-item">
+          <div class="accordian-title">
+            <h3>So what make us dfferent?</h3>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordian-content">
+            <p>
+              The TASTE, of course! And our deals too! We bring to you the best
+              zinger burger deals in Rawalpindi and Islamabad so even if you're
+              a student with a few bucks in your pocket, you can still enjoy the
+              most delicious food in town by ordering from us. <br />
+              Are you up for looking for the best and affordable zinger burger
+              deals in the twin cities? We bet you won't find deals better than
+              ours. Moreover, our deals aren't just restricted to your favorite,
+              crispy burgers. We also have some bombastic deals being offered on
+              our special pizza, calzone and other edible items that'll shout
+              'AMAZING'. <br />We are sure, once you try our food, you'll come
+              back for more! Pizza and burger is something you can eat anytime
+              and anywhere, right? But a legit pizza is one that is oozing with
+              melted cheese and full of your favorite topping, which is hard to
+              find! If you've been in search of the best pizza deals in
+              Rawalpindi and Islamabad than you're in for a surprise because
+              Cheezious is here to give you a taste of the original.
+            </p>
+          </div>
+        </div>
+        <!-- accordian item ends here -->
+        <!-- accordian item -->
+        <div class="accordian-item">
+          <div class="accordian-title">
+            <h3>Who are We?</h3>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordian-content">
+            <p>
+              We are a new set up in the twin cities, bringing exciting flavor
+              for you to enjoy. Yes, we know you can find burgers and pizzas
+              everywhere but not as good as ours! From a little desi touch of
+              Behari kabab roll to fabulous Italian pizza, our menu is based on
+              popular fast food items that people love the most.
+            </p>
+          </div>
+        </div>
+        <!-- accordian item ends here -->
+        <!-- accordian item -->
+        <div class="accordian-item">
+          <div class="accordian-title">
+            <h3>Why Do we say so?</h3>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordian-content">
+            <p>
+              Because unlike other international chains that serve you merely
+              with a piece of baked flatbread with a few chunks of meat and
+              cheese somewhere on top, we serve the original "pizzas". <br />
+              With a generous amount of toppings (a variety of options that you
+              get to choose from), enough cheese to feed an entire neighborhood
+              and sauce with a secret ingredient, we are proud to say our pizzas
+              are the best in town. For the best pizza deals and pizza delivery
+              in your vicinity, <br />
+              just call us right away! Remember, your just a phone call away
+              from trying the finest pizza near you so don't be deprived of
+              great food that can be dropped off at your doorstep piping hot!
+              Calling all foodies out there! Cheezious is in town, serving you
+              with the heavenly and distinctive flavors that force you to gulp
+              down even the last bite without sharing it with a friend or two!
+              Yes, our food is THAT good!
+            </p>
+          </div>
+        </div>
+        <!-- accordian item ends here -->
+        <!-- accordian item -->
+        <div class="accordian-item">
+          <div class="accordian-title">
+            <h3>Where are we Located?</h3>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordian-content">
+            <p>
+              We offer food delivery in Islamabad and Rawalpindi, so yes, the
+              twin cities are fortunate enough to get hold of a fast food joint
+              that serve a variety of delectable items that are hard to resist.
+              <br />
+              Are the kids screaming for pizza? Or have friends coming over who
+              are die-hard fans of flaming, hot wings? Whoever at your end
+              craves for whatever thing, call us for the most convenient fast
+              food delivery in Rawalpindi. <br />Oh, and yes, we offer fast food
+              deliver in Islamabad too! Whether it about biting into crispy and
+              spicy kabab rolls or zinger burger oozing with your favorite
+              sauce, call us right away to indulge into a food coma with food
+              that is fit for a king! Cheezious is the new name for delicious
+              fast food , so do not stay away from ordering your deals right
+              away!
+            </p>
+          </div>
+        </div>
+        <!-- accordian item ends here -->
+      </div>
+    </section>
+    <hr />
+    <!-- accordian section ends here -->
+
+    <!-- footer section  -->
+    <section class="footer-section section">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="/Images/logo.png" alt="chezious logo" />
+        </div>
+        <div class="footer-contact">
+          <h3>Chezious</h3>
+          <a href="#" class=""
+            ><i class="bi bi-telephone customized-links"></i>051 111446699</a
+          >
+          <a href="#" class=""
+            ><i class="bi bi-envelope customized-links"></i
+            >example123@gmail.com</a
+          >
+          <a href="#" class=""
+            ><i class="bi bi-geo-alt-fill customized-links"></i>Ghori town,
+            Islamabad</a
+          >
+          <div class="download-options">
+            <img src="/Images/playstore.svg" alt="" />
+            <img src="/Images/appstore.svg" alt="" />
+          </div>
+        </div>
+        <div class="footer-timing">
+          <h3>Our Timings</h3>
+          <p class="small-text">Monday - Thursday 11:00 AM - 02:00 AM</p>
+          <p class="small-text">Monday - Thursday 11:00 AM - 02:00 AM</p>
+          <p class="small-text">Monday - Thursday 11:00 AM - 02:00 AM</p>
+          <div class="social-links">
+            <img src="/Images/facebook.png" alt="facebook" />
+            <img src="/Images/instagram.png" alt="facebook" />
+          </div>
+        </div>
+      </div>
+      <hr style="background-color: black; margin: 2rem 0rem; height: 3px" />
+      <div class="copy-right">&copy; All Rights Reserved Ahsan Burki</div>
+    </section>
+    <!-- footer ends here -->
+
+    <script src="/Js/script.js"></script>
+  </body>
+</html>
