@@ -227,6 +227,7 @@ body {
   border-radius: 20px;
   background-color: var(--light-text);
   box-shadow: 0px 0px 8px var(--grey-shade);
+  border:3px solid ;
 }
 .card:hover {
   border: 3px solid var(--primary-color);
